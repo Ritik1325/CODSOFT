@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: beige;
+   
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+h1{
+    width: screen;
+    text-align: center;
+    padding: 12px;
+}
+.calculator{
+    width: 400px ;
+    height: 450px;
+    margin: 12px auto;
+    border: 4px solid black;
+    border-radius: 20px;
+    padding: 16px;
+    box-sizing: border-box;
+    overflow: hidden;
+    
+
+
+}
+.calculator .display input{
+    width: 100%;
+    outline: none;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    box-sizing: border-box;
+    border: 2px black solid;
+    border-radius: 16px;
+    box-shadow: -8px 12px 20px 8px rgb(30, 29, 29);
+    margin-bottom: 16px;
+}
+.buttons{
+    width: 100%;
+   
+    
+    box-sizing: border-box;
+    display: flex;
+    gap: 12px;
+}
+.buttons .numbers{
+    width:80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+   
+    padding: 4px;
+}
+.numbers button{
+   padding: 20px;
+   border: 4px solid black;
+    box-shadow: 4px 8px 12px black;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 16px;
+}
+.numbers .clear{
+    background-color: orangered;
+    color: white;
+}
+.numbers .equal{
+    width: 100%;
+    background-color: green;
+    color: white;
+}
+.buttons .signs{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    padding: 2px;
+
+}
+.signs button{
+    padding: 16px;
+   border: 4px solid black;
+    box-shadow: 4px 8px 12px black;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 16px;
+    background-color: orangered;
+    color: white;
+
+}
