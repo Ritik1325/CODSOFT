@@ -1,0 +1,276 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.container{
+  min-width: screen;
+  box-sizing: border-box;
+}
+
+.navbar{
+    padding: 8px ;
+    background-color:lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    margin-bottom: 32px;
+    z-index: 1;
+    background: transparent;
+   
+
+}
+.navbar h1{
+    width: 40%;
+    text-shadow: 32px ;
+    font-weight: 700;
+}
+.navbar .navs{
+    width: 60%;
+    display:flex;
+    justify-content: space-evenly
+}
+.navs a{
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+
+}
+.navs a:hover{
+    text-decoration: underline;
+    scale: 1.2;
+    transition: 0.35s ease;
+   
+    
+}
+.content{
+    display: flex;
+    margin-bottom: 32px;
+    padding-top: 80px;
+    
+
+}
+.content .intro{
+    margin-top: 32px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    
+}
+
+
+.intro p{
+    line-height: 2;
+    width: 80%;
+    letter-spacing: 2px;
+
+}
+.content .intro h3,p,h1{
+  text-shadow: 2px 4px 8px black;
+    
+}
+.content .image{
+    width: 50%;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+}
+.ring{
+    width: 400px;
+    height: 380px;
+    border: 12px orangered solid ;
+    border-radius: 50%;
+    margin: 20px auto;
+    margin-left: 100px;
+    box-shadow: inset -8px -12px 32px  16px orangered;
+   
+    overflow: hidden;
+   text-align: center;
+    
+}
+.ring img{
+    width: 300px;
+    height: 300px;
+    mix-blend-mode: multiply;
+    object-fit: cover;
+    margin: 50px auto;
+    border-radius: 40%;
+   
+}
+.about-me{
+    margin-top: 12px;
+    margin-bottom: 30px;
+    padding: 12px;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+   
+    
+}
+.about-me h1 span{
+    color: skyblue;
+}
+.about-me p{
+    width: 700px;
+    line-height: 2.4;
+    font-size: 20px;
+    letter-spacing: 1.8px;
+    word-spacing: 2px;
+    animation: wobble 0.8s alternate infinite;
+}
+@keyframes wobble {
+    from{
+       scale: 1;
+    }
+    to{
+        scale:1.2;
+    }
+    
+}
+.about-me button{
+    padding: 12px;
+    border-radius: 16px;
+    font-weight: 600;
+    background-color: skyblue;
+    color: white;
+    border: none;
+    letter-spacing: 2px;
+}
+.skills{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 32px;
+   
+
+}
+.skills .range{
+    width: 700px;
+    height: 350px;
+    margin: 20px auto;
+    border: 2px black solid;
+    border-radius: 16px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.range .skil-ran{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 12px;
+    box-sizing: border-box;
+    
+}
+
+.range .skil-ran div{
+    background-color: skyblue;
+    border-radius: 16px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.one { width: 98%; }
+.two { width: 90%; }
+.three { width: 85%; }
+.four { width: 70%; }
+
+.projects{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.projects h1{
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+}
+.projects .pro1{
+    display: flex;
+    justify-content: space-around;
+}
+.pro1 img{
+    width: 300px; 
+     border-radius: 12px;
+}
+.pro1 p{
+    font-size: 22px;
+    width: 600px;
+    text-align: center;
+    letter-spacing: 1.5px;
+    word-spacing: 1.4;
+    line-height: 2;
+}
+.projects .pro2{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 32px;
+}
+.pro2 img{
+    width: 300px; 
+    border-radius: 12px;
+}
+.pro2 p{
+    font-size: 22px;
+    width: 600px;
+    text-align: center;
+     letter-spacing: 1.5px;
+    word-spacing: 1.4;
+    line-height: 2;
+}
+.contact{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+   
+}
+.contact .details{
+    width: 700px;
+    height: 380px;
+    
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+.details input{
+    padding: 8px;
+    outline: none;
+    border-radius: 12px;
+    background-color: skyblue;
+    
+}
+.details textarea{
+    resize: none;
+     padding: 8px;
+    outline: none;
+    border-radius: 12px;
+    background-color: skyblue;
+}
